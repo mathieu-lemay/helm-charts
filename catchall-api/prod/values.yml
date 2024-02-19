@@ -1,4 +1,4 @@
-appVersion: 2.0.0
+appVersion: 2.0.1
 workers: 8
 log:
   config: error,catchall_api=info
