@@ -32,9 +32,9 @@ spec:
               protocol: TCP
           env:
             - name: CATCHALL_API_WORKERS
-              value: {{ .Values.workers }}
+              value: "{{ .Values.workers }}"
             - name: RUST_LOG
-              value: {{ .Values.log.config }}
+              value: "{{ .Values.log.config }}"
           resources: {}
       restartPolicy: Always
 status: {}
