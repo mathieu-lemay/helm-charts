@@ -10,8 +10,7 @@ metadata:
   name: catchall
 spec:
   ports:
-    - name: "8080"
-      port: 8080
+    - name: "http"
       targetPort: 8080
   selector:
     io.kompose.service: catchall
