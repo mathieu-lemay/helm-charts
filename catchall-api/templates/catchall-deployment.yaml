@@ -31,8 +31,10 @@ spec:
             - containerPort: {{ .Values.port }}
               protocol: TCP
           env:
-            - name: CATCHALL_API_LOG_LEVEL
-              value: {{ .Values.log.level }}
+            - name: CATCHALL_API_WORKERS
+              value: {{ .Values.workers }}
+            - name: RUST_LOG
+              value: {{ .Values.log.config }}
           resources: {}
       restartPolicy: Always
 status: {}
