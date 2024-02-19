@@ -1,1 +1,4 @@
 appVersion: 2.0.0
+port: 8080
+log:
+  level: DEBUG

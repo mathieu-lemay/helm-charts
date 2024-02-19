@@ -28,9 +28,11 @@ spec:
         - image: acidrain/catchall-api:{{ .Values.appVersion }}
           name: catchall
           ports:
-            - containerPort: 8080
-              hostPort: 8080
+            - containerPort: {{ .Values.port }}
               protocol: TCP
+          env:
+            - name: CATCHALL_API_LOG_LEVEL
+              value: {{ .Values.log.level }}
           resources: {}
       restartPolicy: Always
 status: {}

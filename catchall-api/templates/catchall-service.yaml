@@ -11,7 +11,7 @@ metadata:
 spec:
   ports:
     - name: "http"
-      port: 8080
+      port: {{ .Values.port }}
   selector:
     io.kompose.service: catchall
 status:
