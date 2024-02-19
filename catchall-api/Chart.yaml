@@ -1,0 +1,8 @@
+name: catchall-api
+description: A generated Helm Chart for catchall-api from Skippbox Kompose
+version: 0.0.1
+apiVersion: v2
+keywords:
+  - catchall-api
+sources:
+home:
