@@ -31,6 +31,28 @@ spec:
                 name: dummy-api-config
             - secretRef:
                 name: dummy-db-config
+          startupProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.api.port }}
+            periodSeconds: 5
+            timeoutSeconds: 1
+            failureThreshold: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.api.port }}
+            periodSeconds: 15
+            timeoutSeconds: 1
+            failureThreshold: 2
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.api.port }}
+            periodSeconds: 5
+            timeoutSeconds: 1
+            failureThreshold: 1
+            successThreshold: 2
           resources: {}
       restartPolicy: Always
 status: {}
