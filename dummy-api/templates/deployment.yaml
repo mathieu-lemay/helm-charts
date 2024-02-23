@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    org.acidrain.service: dummy-api
+  name: dummy-api
+spec:
+  replicas: {{ .Values.api.replicas | default 1 }}
+  selector:
+    matchLabels:
+      org.acidrain.service: dummy-api
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        org.acidrain.network/helm-charts-default: "true"
+        org.acidrain.service: dummy-api
+    spec:
+      containers:
+        - image: acidrain/dummy-api:{{ .Values.appVersion }}
+          name: dummy-api
+          imagePullPolicy: Always
+          command:
+            - dummy-api
+          ports:
+            - containerPort: {{ .Values.api.port }}
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: dummy-api-config
+            - secretRef:
+                name: dummy-db-config
+          resources: {}
+      restartPolicy: Always
+status: {}

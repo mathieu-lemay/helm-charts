@@ -1,0 +1,13 @@
+ingress:
+  enabled: true
+  host: dummy.dev.localhost
+
+db:
+  host: postgres.dev.localhost
+  name: dummy-dev
+  username: dev-user
+  password: dev-password
+
+log:
+  level: debug
+  output_format: console

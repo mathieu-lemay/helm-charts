@@ -1,0 +1,13 @@
+api:
+  replicas: 4
+
+ingress:
+  enabled: true
+  host: dummy.prod.localhost
+
+db:
+  host: postgres.prod.localhost
+  name: dummy-prod
+  username: prod-user
+  password: prod-password
+  pool_size: 42

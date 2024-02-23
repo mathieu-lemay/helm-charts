@@ -1,0 +1,12 @@
+api:
+  replicas: 2
+
+ingress:
+  enabled: true
+  host: dummy.staging.localhost
+
+db:
+  host: postgres.staging.localhost
+  name: dummy-staging
+  username: staging-user
+  password: staging-password

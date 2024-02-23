@@ -1,0 +1,21 @@
+appVersion: 1.0.0
+
+api:
+  port: 8080
+  replicas:
+
+ingress:
+  enabled: false
+  host:
+
+db:
+  host:
+  port:
+  name:
+  username:
+  password:
+  pool_size:
+
+log:
+  level: info
+  output_format: json
