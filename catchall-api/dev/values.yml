@@ -1,2 +1,6 @@
 log:
   config: info
+
+ingress:
+  enabled: true
+  host: catchall.dev.localhost

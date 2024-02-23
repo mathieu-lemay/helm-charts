@@ -3,3 +3,7 @@ port: 8080
 workers: 2
 log:
   config: info
+
+ingress:
+  enabled: false
+  host:
