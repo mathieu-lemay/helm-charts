@@ -6,8 +6,8 @@ ingress:
   host: dummy.prod.localhost
 
 db:
-  host: postgres.prod.localhost
-  name: dummy-prod
+  host: postgres-prod-postgresql.postgres
+  name: prod-db
   username: prod-user
   password: prod-password
   pool_size: 42

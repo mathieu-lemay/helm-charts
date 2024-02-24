@@ -1,10 +1,12 @@
+appVersion: 2.0.0
+
 ingress:
   enabled: true
   host: dummy.dev.localhost
 
 db:
-  host: postgres.dev.localhost
-  name: dummy-dev
+  host: postgres-dev-postgresql.postgres
+  name: dev-db
   username: dev-user
   password: dev-password
 
