@@ -2,7 +2,7 @@ appVersion: 2.0.0
 
 ingress:
   enabled: true
-  host: dummy.dev.localhost
+  host: dummy.dev.kind.local
 
 db:
   host: postgres-dev-postgresql.postgres

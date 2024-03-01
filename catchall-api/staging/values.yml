@@ -3,4 +3,4 @@ log:
 
 ingress:
   enabled: true
-  host: catchall.staging.localhost
+  host: catchall.staging.kind.local

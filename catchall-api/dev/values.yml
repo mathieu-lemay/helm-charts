@@ -3,4 +3,4 @@ log:
 
 ingress:
   enabled: true
-  host: catchall.dev.localhost
+  host: catchall.dev.kind.local

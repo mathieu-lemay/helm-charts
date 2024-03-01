@@ -3,7 +3,7 @@ api:
 
 ingress:
   enabled: true
-  host: dummy.prod.localhost
+  host: dummy.prod.kind.local
 
 db:
   host: postgres-prod-postgresql.postgres

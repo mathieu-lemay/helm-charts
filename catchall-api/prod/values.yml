@@ -5,4 +5,4 @@ log:
 
 ingress:
   enabled: true
-  host: catchall.prod.localhost
+  host: catchall.prod.kind.local

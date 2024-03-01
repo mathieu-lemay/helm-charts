@@ -5,7 +5,7 @@ api:
 
 ingress:
   enabled: true
-  host: dummy.staging.localhost
+  host: dummy.staging.kind.local
 
 db:
   host: postgres-staging-postgresql.postgres
