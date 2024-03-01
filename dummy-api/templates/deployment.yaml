@@ -27,8 +27,10 @@ spec:
             - containerPort: {{ .Values.api.port }}
               protocol: TCP
           environment:
-            ACIDRAIN_LOG_LEVEL: '{{ .Values.log.level }}'
-            ACIDRAIN_LOG_OUTPUT_FORMAT: '{{ .Values.log.output_format }}'
+            - name: ACIDRAIN_LOG_LEVEL
+              value: '{{ .Values.log.level }}'
+            - name: ACIDRAIN_LOG_OUTPUT_FORMAT
+              value: '{{ .Values.log.output_format }}'
           envFrom:
             - secretRef:
                 name: dummy-db-config
