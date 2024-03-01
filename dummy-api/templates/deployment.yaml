@@ -21,7 +21,7 @@ spec:
         - image: acidrain/dummy-api:{{ .Values.appVersion }}
           name: dummy-api
           imagePullPolicy: Always
-          command:
+          args:
             - dummy-api
           ports:
             - containerPort: {{ .Values.api.port }}
