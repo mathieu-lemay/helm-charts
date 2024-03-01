@@ -1,4 +1,4 @@
-appVersion: 2.0.0
+appVersion: 2.0.1
 
 api:
   replicas: 2
